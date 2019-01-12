@@ -1,13 +1,14 @@
 {
-  "name": "sisatest",
-  "version": "1.0.0",
-  "description": "An app demonstrating how restful is sisa",
+  "name": "crew-bot",
+  "version": "0.2.5",
+  "description": "Bot based on discord.js using MongoDB and mongoose to store osu! Crew user's data.",
   "main": "index.js",
   "scripts": {
-    "start": "forever index.js"
+    "start": "forever index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Hiro Izawa",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "dependencies": {
     "discord.js": "^11.4.2",
     "forever": "^0.15.3",
