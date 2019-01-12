@@ -1,0 +1,16 @@
+{
+  "name": "sisatest",
+  "version": "1.0.0",
+  "description": "An app demonstrating how restful is sisa",
+  "main": "index.js",
+  "scripts": {
+    "start": "forever index.js"
+  },
+  "author": "Hiro Izawa",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "forever": "^0.15.3",
+    "mongoose": "^5.4.2"
+  }
+}
