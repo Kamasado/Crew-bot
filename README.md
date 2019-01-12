@@ -24,8 +24,6 @@ Install dependences
 yarn
 ```
 
----
-
 ```
 npm install
 ```
@@ -35,8 +33,6 @@ Run development server
 ```
 yarn dev
 ```
-
----
 
 ```
 npm run dev
