@@ -28,11 +28,12 @@ module.exports = (arg, msg) => {
   user.findOne({ discordId }, (err, u) => {
     // if user not registered ->
     if (!u) {
+      const author = msg.client.users.get(discordId);
       let embed = helpers
         .embed()
-        .setAuthor(msg.author.username, msg.author.avatarURL)
+        .setAuthor(author.username, author.avatarURL)
         .addField(
-          "¡No estas registrado!",
+          "¡El usuario no está registrado!",
           "Contacta con un <@&530454438008061962> para comenzar."
         );
       msg.channel.send(embed);
