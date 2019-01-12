@@ -39,6 +39,5 @@ module.exports = (arg, msg) => {
     // send registered user profile
     let profile = helpers.profile(u, msg);
     msg.channel.send(profile);
-    msg.channel.send("esto se acaba de meter");
   });
 };
