@@ -9,7 +9,7 @@ const errmsg = helpers.error(
 );
 
 module.exports = (arg, msg) => {
-  if (!msg.author.id == "173843781748129792") {
+  if (msg.author.id !== "173843781748129792") {
     const error = helpers.error(
       "Sin permisos suficientes",
       "Solo <@173843781748129792> puede usar este comando."
