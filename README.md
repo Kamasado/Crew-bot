@@ -38,6 +38,8 @@ yarn dev
 npm run dev
 ```
 
+---
+
 ```
 $ yarn dev
 yarn run v1.13.0
