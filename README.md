@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to run this bot
+Things you need to run this bot:
 
 - Node.js v10.14.1+
 - Git
