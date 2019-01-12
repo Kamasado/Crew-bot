@@ -2,7 +2,6 @@ const fs = require("fs");
 
 const config = JSON.parse(fs.readFileSync(__basedir + "/bot_config.json"));
 const helpers = require(__basedir + "/commands/helpers");
-const user = require(__basedir + "/userModel");
 
 const errmsg = helpers.error(
   "Sintaxis incorrecta",
