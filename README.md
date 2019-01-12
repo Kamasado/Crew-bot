@@ -12,11 +12,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to run this bot
 
-```
 - Node.js v10.14.1+
 - Git
 - A working MongoDB database
-```
 
 ### Installing
 
