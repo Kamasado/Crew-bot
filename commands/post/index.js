@@ -28,8 +28,8 @@ module.exports = (arg, msg) => {
 
   const matches = arg.join(" ").match(/^"(.+)" (.+)$/);
 
-  const titulo = matches[0];
-  const contenido = matches[1];
+  const titulo = matches[1];
+  const contenido = matches[2];
 
   msg.delete();
   const post = helpers.embed().addField(titulo, contenido);
