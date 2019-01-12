@@ -1,8 +1,6 @@
 # Osu!Ranking Bot
 
 Bot based on discord.js using MongoDB and mongoose to store osu! Crew user's data.
----
-Bot basado en discord.js usando MongoDB y mongoose para almacenar datos.
 
 ## Getting Started
 
@@ -64,7 +62,7 @@ Use my [docker image](https://github.com/Kamasado/Crew-bot-Docker-image) for pro
 
 ## Contributing
 
-Please contact me on discord **```Hiro izawa#2976```** if you want to contribute.
+Please contact me on discord **`Hiro izawa#2976`** if you want to contribute.
 
 ## Versioning
 
