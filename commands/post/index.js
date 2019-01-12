@@ -2,15 +2,18 @@ const fs = require("fs");
 
 const config = JSON.parse(fs.readFileSync(__basedir + "/bot_config.json"));
 const helpers = require(__basedir + "/commands/helpers");
-const user = require(__basedir + "/userModel");
 
 const errmsg = helpers.error(
   "Sintaxis incorrecta",
-  `Uso: **${config.prefix}post** <**titulo**> <**contenido**>`
+  `Uso: **${config.prefix}post** <**"titulo entre comillas"**> <**contenido**>`
 );
 
 function valid(arg) {
-  if (arg.length !== 2) {
+  if (!(arg.length >= 2)) {
+    return false;
+  }
+
+  if (!/^".+" .+$/.test(arg.join(" "))) {
     return false;
   }
 
@@ -23,8 +26,10 @@ module.exports = (arg, msg) => {
     return;
   }
 
-  const titulo = arg[0];
-  const contenido = arg[1];
+  const matches = arg.join(" ").match(/^"(.+)" (.+)$/);
+
+  const titulo = matches[0];
+  const contenido = matches[1];
 
   msg.delete();
   const post = helpers.embed().addField(titulo, contenido);
