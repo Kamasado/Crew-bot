@@ -63,7 +63,7 @@ module.exports = (arg, msg) => {
     })
     .catch(err => {
       const embed = helpers.error(
-        `<@${discordId}> ya está registrado>`,
+        `<@${discordId}> ya está registrado`,
         "No puedes registrar dos veces a un usuario."
       );
       msg.channel.send(embed);
