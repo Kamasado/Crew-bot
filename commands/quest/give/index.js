@@ -34,7 +34,7 @@ module.exports = (arg, msg) => {
     .findOneAndUpdate({ discordId }, { $inc: { quests } })
     .then(u => {
       const success = helpers.success(
-        "Experiencia añadida",
+        "Numero de quests modificado",
         `Se ha incrementado el numero de quests completadas en **${quests}** para el perfil de <@${discordId}>`
       );
       msg.channel.send(success);
