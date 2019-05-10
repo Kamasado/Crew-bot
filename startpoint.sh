@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# http server
-screen -dm -S 'http' node http.js
-
 # discord server
-yarn start
+screen -dm -S 'discord' yarn start
+# http server
+node http.js
