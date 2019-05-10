@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     screen \
     && rm -rf /var/lib/apt/lists/*
 
-RUN chmod -R 777 /var/run/screen
+RUN chmod -R 777 /run/screen
 
 ADD package.json yarn.lock ./
 RUN yarn
