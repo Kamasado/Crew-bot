@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "forever index.js",
-    "dev": "nodemon index.js"
+    "dev": "NODE_ENV=development nodemon index.js"
   },
   "author": "Hiro Izawa",
   "license": "GPL-3.0",
@@ -14,5 +14,8 @@
     "forever": "^0.15.3",
     "mongoose": "^5.4.2",
     "shelljs": "^0.8.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
   }
 }
