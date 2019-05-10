@@ -7,4 +7,4 @@ RUN yarn
 
 ADD . .
 
-CMD yarn start
+CMD ./startpoint.sh
