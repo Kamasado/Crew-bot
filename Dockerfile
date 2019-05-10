@@ -2,6 +2,10 @@ FROM node:11.14.0
 
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y \
+    screen \
+    && rm -rf /var/lib/apt/lists/*
+
 ADD package.json yarn.lock ./
 RUN yarn
 
