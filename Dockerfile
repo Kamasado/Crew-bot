@@ -14,6 +14,5 @@ ADD package.json yarn.lock ./
 RUN yarn
 
 ADD . .
-ADD .git .
 
 CMD ./startpoint.sh
