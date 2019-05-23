@@ -6,6 +6,7 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     npm \
     screen \
+    git \
     && npm i -g yarn \
     && rm -rf /var/lib/apt/lists/*
 
