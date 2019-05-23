@@ -6,7 +6,7 @@ const user = require(__basedir + "/userModel");
 
 const errmsg = helpers.error(
   "Sintaxis incorrecta",
-  `Uso: **${config.prefix}exp set** <**@mención** | **id**> <**exp**>`
+  `Uso: **${config.prefix}exp setEJEM** <**@mención** | **id**> <**exp**>`
 );
 
 function valid(arg) {
