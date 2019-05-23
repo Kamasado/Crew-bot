@@ -7,7 +7,7 @@ const errmsg = helpers.error(
   "Sintaxis incorrecta",
   `Uso: **${
     config.prefix
-  }exp** <**give** | **take**> <**@mención** | **id**> <**exp**>`
+  }exp** <**give** | **take** | **set**> <**@mención** | **id**> <**exp**>`
 );
 
 module.exports = (arg, msg) => {
