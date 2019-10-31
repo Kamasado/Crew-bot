@@ -12,7 +12,7 @@
   "dependencies": {
     "discord.js": "^11.4.2",
     "forever": "^0.15.3",
-    "mongoose": "^5.4.2",
+    "mongoose": "^5.7.5",
     "shelljs": "^0.8.3"
   },
   "devDependencies": {
